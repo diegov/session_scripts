@@ -1,0 +1,12 @@
+[package]
+name = "session_scripts"
+version = "0.1.0"
+authors = ["Diego Veralli <diego@diegoveralli.com>"]
+license = "GPL-3.0"
+description = "Run scripts on org.freedesktop.login1.Session DBus signals"
+repository = "https://github.com/diegov/session_scripts"
+edition = "2018"
+
+[dependencies]
+dbus = "0.9"
+structopt = "0.3.*"

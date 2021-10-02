@@ -1,0 +1,11 @@
+[Unit]
+Description=Command runner for session DBus signals
+Wants=dbus.socket
+After=dbus.socket
+After=default.target
+
+[Service]
+ExecStart=${BIN} ${ARGS}
+Restart=always
+RestartSec=3
+ExecStop=/bin/kill "$MAINPID"
